@@ -15,8 +15,8 @@ install:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push ososystem/database:${TRAVIS_COMMIT}
-  - docker tag -f ososystem/database:${TRAVIS_COMMIT} ososystem/database:last_successful_build
-  - docker push ososystem/database:last_successful_build
+  - docker tag ososystem/database:${TRAVIS_COMMIT} ososystem/database:latest
+  - docker push ososystem/database:latest
   - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
   - ./send.sh success $WEBHOOK_URL
