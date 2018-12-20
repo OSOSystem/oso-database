@@ -1,6 +1,11 @@
 # <img src="https://user-images.githubusercontent.com/19901781/46945965-8cb21700-d076-11e8-8c82-95af6b7388b3.png" width="80" height="80"> OSO Database
 [![Build Status](https://travis-ci.com/OSOSystem/oso-database.svg?branch=develop)](https://travis-ci.com/OSOSystem/oso-database)
 
+This repository contains everything related to the Postgres image we are using.
+
+>The image can be found under<br>
+https://hub.docker.com/r/ososystem/database
+
 # Contribute to the project
 Everyone is welcome to contribute to this project.
 Check out our issues tab and pick one issue out which seems fitting to you.
